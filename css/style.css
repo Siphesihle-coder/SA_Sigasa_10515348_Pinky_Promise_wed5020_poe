@@ -1,1 +1,625 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+img {
+max-width: 100%;
+display: block;
+}
+a {
+color: magenta;
+text-decoration: none;
+}
+a:hover,
+a:focus {
+color: palevioletred;
+text-decoration: underline;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+label:focus-visible {
+outline: 3px solid magenta;
+outline-offset: 2px;
+}
+
+h1, h2, h3, h4 {
+font-weight: 700;
+line-height: 1.2;
+margin-bottom: 16px;
+}
+h1 { font-size: 2.4rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.2rem; }
+p {
+margin-bottom: 
+color pink;
+}
+
+.eyebrow {
+display: inline-block;
+font-size: 0.75rem;
+font-weight: 700;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+color: magenta;
+margin-bottom: 8px;
+}
+
+.container {
+max-width: 1100px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 16px;
+padding-right: 16px;
+}
+
+section {
+padding-top: 64px;
+padding-bottom: 64px;
+}
+.section-alt {
+background-color: magenta;
+}
+.page-header {
+text-align: center;
+padding-top: 64px;
+padding-bottom: 24px;
+}
+.page-header p {
+max-width: 60ch;
+margin-left: auto;
+margin-right: auto;
+}
+
+.btn {
+display: inline-flex;
+align-items: center;
+padding: 12px 24px;
+border-radius: 8px;
+font-weight: 700;
+border: 2px solid transparent;
+cursor: pointer;
+transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s
+ease;
+}
+.btn i {
+margin-right: 6px;
+}
+
+.btn-primary {
+background-color: hotpink;
+color: hotpink;
+}
+.btn-primary:hover {
+background-color: hotpink;
+}
+.btn-secondary {
+background-color: transparent;
+border-color: magenta;
+color: magenta;
+}
+.btn-secondary:hover {
+background-color: magenta;
+color: pink;
+}
+/* A light-outlined button, made specifically for sitting on top of a
+dark photo (you'll use this on the hero banner shortly), where a
+dark-text button would be hard to read against a photo. */
+.btn-secondary-light {
+background-color: transparent;
+border-color: hotpink;
+color: hotpink;
+}
+.btn-secondary-light:hover {
+background-color: pink;
+color: magenta;
+}
+/* A green button, used for the "Send" button on both forms later in
+this tutorial. */
+.btn-success {
+background-color: pink
+color pink;
+}
+.btn-success:hover {
+background-color: papayawhip;
+}
+.btn-block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+site-header {
+border-bottom: 1px solid magenta;
+position: sticky;
+top: 0;
+background-color: magenta;
+z-index: 100;
+}
+.header-inner {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 16px;
+padding-bottom: 16px;
+}
+
+
+.logo {
+font-weight: 700;
+font-size: 1.4rem;
+color: magenta;
+}
+.main-nav ul {
+list-style: none;
+display: flex;
+gap: 16px;
+}
+.main-nav a {
+color: magenta;
+font-weight: 600;
+padding: 6px 4px;
+border-bottom: 2px solid transparent;
+}
+.main-nav a:hover,
+.main-nav a[area-current="page"] {
+color: magenta;
+border-bottom-color: magenta;
+text-decoration: none;
+}
+
+/* The checkbox itself is never visible — it only exists to hold the 
+ open/closed state.  */
+.nav-toggle-input {
+position: absolute;
+opacity: 0;
+pointer-events: none;
+}
+/* The <label> is what the user actually sees and clicks. */
+.nav-toggle {
+display: none;
+align-items: center;
+justify-content: center;
+width: 40px;
+height: 40px;
+border: 1px solid pink;
+border-radius: 8px;
+color: palevioletred;
+font-size: 1.2rem;
+cursor: pointer;
+}
+/* Show only the "closed" (hamburger) icon by default... */
+.nav-toggle .icon-close {
+display: none;
+}
+/* ...then swap which icon is visible once the checkbox is checked. */
+.nav-toggle-input:checked ~ .nav-toggle .icon-open {
+display: none;
+}
+.nav-toggle-input:checked ~ .nav-toggle .icon-close {
+display: inline-block;
+}
+
+site-footer {
+background-color: magenta;
+color:pink;
+padding-top: 40px;
+padding-bottom: 24px;
+}
+.footer-inner {
+display: flex;
+flex-wrap: wrap;
+gap: 40px;
+justify-content: space-between;
+margin-bottom: 24px;
+}
+.site-footer .logo {
+color: pink;
+}
+.site-footer a {
+color: palevioletred;
+}
+.site-footer a:hover {
+color: pink;
+}
+.footer-col h4 {
+color: magenta;
+font-size: 1rem;
+margin-bottom: 8px;
+}
+.copyright {
+border-top: 1px solid pink;
+padding-top: 16px;
+text-align: center;
+font-size: 0.85rem;
+color: pink;
+}
+
+icon-list {
+list-style: none;
+margin-bottom: 16px;
+}
+.icon-list li {
+display: flex;
+align-items: flex-start;
+gap: 10px;
+margin-bottom: 8px;
+}
+.icon-list i {
+color: magenta;
+width: 16px;
+text-align: center;
+margin-top: 4px;
+flex: none;
+}
+.social-list {
+color: magenta;
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+gap: 8px;
+}
+.icon-btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+border: 1px solid pink;
+color: magenta;
+font-size: 1rem;
+}
+.icon-btn:hover,
+.icon-btn:focus {
+color: magenta;
+border-color: magenta;
+text-decoration: none;
+}
+.site-footer .icon-btn {
+border-color: palevioletred;
+color: palevioletred;
+}
+.site-footer .icon-btn:hover {
+color: plum;
+border-color: plum;
+}
+
+.hero-banner {
+position: relative;
+overflow: hidden;
+border-radius: 8px;
+margin-top: 40px;
+}
+.hero-photo {
+width: 100%;
+aspect-ratio: 5 / 2;
+object-fit: cover;
+}
+.hero-overlay {
+position: absolute;
+inset: 0;
+display: flex;
+align-items: center;
+background: linear-gradient(
+100deg,
+rgba(48, 35, 46, 0.82) 0%,
+rgba(48, 35, 46, 0.55) 45%,
+rgba(48, 35, 47, 0.15) 100%
+);
+}
+.hero-content {
+color: pink;
+padding: 40px;
+max-width: 520px;
+}
+.hero-content .eyebrow {
+color: plum;
+}
+.hero-content p {
+color: rgba(255, 255, 255, 0.85);
+}
+.hero-buttons {
+display: flex;
+flex-wrap: wrap;
+gap: 16px;
+margin-top: 16px;
+}
+
+split {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+gap: 40px;
+}
+.split-image,
+.split-text {
+flex: 1 1 340px;
+}
+.split-image img {
+border-radius: 8px;
+width: 100%;
+aspect-ratio: 4 / 3;
+object-fit: cover;
+}
+
+ /* Add this class alongside .split-image whenever the photo should 
+stay a perfect square instead of the usual 4:3 landscape crop —
+used for the portrait photo on the About Us page. */
+.split-image.is-square img {
+aspect-ratio: 1 / 1;
+}
+
+.card-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+gap: 24px;
+margin-top: 40px;
+}
+
+.grid-4 {
+display: grid;
+grid-template-columns: 1fr;
+gap: 24px;
+margin-top: 40px;
+}
+@media (min-width: 560px) {
+.grid-4 {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (min-width: 900px) {
+.grid-4 {
+grid-template-columns: repeat(4, 1fr);
+}
+}
+
+.card {
+background-color: #ffffff;
+border: 1px solid #dfe2ec;
+border-radius: 8px;
+padding: 24px;
+min-height: 190px;
+display: flex;
+flex-direction: column;
+transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.card:hover {
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+transform: translateY(-3px);
+}
+.card .card-icon {
+font-size: 1.5rem;
+color: magenta;
+margin-bottom: 8px;
+}
+.card p {
+margin-bottom: 0;
+flex: 1;
+}
+
+.product-card {
+border: 1px solid palevioletred;
+border-radius: 8px;
+overflow: hidden;
+background-color: pink;
+display: flex;
+flex-direction: column;
+}
+.product-image {
+    
+                    
+
+position: relative;
+}
+.product-image img {
+   https://images.pexels.com/photos/32875639/pexels-photo-32875639.jpeg
+width: 100%
+aspect-ratio : 1 / 1;
+object-fit cover;
+}
+.add-cart {
+position: absolute;
+top: 10px;
+right: 10px;
+display: inline-flex;
+align-items: center;
+gap: 4px;
+background-color: pink;
+color: magenta;
+font-size: 0.72rem;
+font-weight: 700;
+padding: 5px 10px;
+border-radius: 999px;
+border: 1px solid plum;
+}
+.add-cart:hover {
+color: magenta;
+border-color: magenta;
+}
+.product-card-body {
+padding: 16px;
+display: flex;
+flex-direction: column;
+gap: 4px;
+}
+
+.product-meta {
+display: flex;
+justify-content: space-between;
+font-size: 0.85rem;
+color: magenta;
+}
+
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+white-space: nowrap;
+border: 0;
+}
+.search-pill {
+position: relative;
+max-width: 420px;
+margin: 0 auto 40px;
+}
+.search-pill i {
+position: absolute;
+top: 50%;
+left: 18px;
+transform: translateY(-50%);
+color: magenta;
+pointer-events: none;
+}
+.search-pill input {
+width: 100%;
+padding: 12px 16px 12px 42px;
+border: 1px solid palevioletred;
+border-radius: 999px;
+font: inherit;
+background-color: pink;
+}
+.search-pill input:focus {
+border-color: magenta;
+}
+
+.form-layout {
+display: flex;
+flex-wrap: wrap;
+gap: 24px;
+align-items: flex-start;
+}
+.form-card,
+.info-card {
+flex: 1 1 340px;
+border: 1px solid pink;
+border-radius: 8px;
+padding: 24px;
+}
+.form-card {
+background-color: palevioletred;
+}
+.form-group {
+margin-bottom: 16px;
+}
+.form-group label {
+display: block;
+font-weight: 600;
+font-size: 0.9rem;
+margin-bottom: 4px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+width: 100%;
+padding: 10px 12px;
+border: 1px solid palevioletred;
+border-radius: 8px;
+font: inherit;
+background-color: pink;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+border-color: magenta;
+}
+
+.form-row {
+display: flex;
+gap: 16px;
+flex-wrap: wrap;
+}
+.form-row .form-group {
+flex: 1 1 160px;
+}
+
+.faq-item {
+border-bottom: 1px solid pink;
+padding: 16px 0;
+}
+.faq-item h3 {
+font-size: 1rem;
+margin-bottom: 6px;
+}
+.faq-item h3 i {
+color: magenta;
+margin-right: 6px;
+}
+.faq-item p {
+margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+/* anything in here only applies when the window is
+700 pixels wide or narrower */
+}
+
+@media (max-width: 700px) {
+.nav-toggle {
+display: flex;
+}
+.main-nav {
+display: none;
+width: 100%;
+}
+.nav-toggle-input:checked ~ .main-nav {
+display: block;
+}
+.main-nav ul {
+flex-direction: column;
+gap: 0;
+padding-bottom: 16px;
+}
+.main-nav a {
+display: block;
+padding: 10px 4px;
+border-bottom: 1px solid pink;
+}
+.header-inner {
+flex-wrap: wrap;
+}
+.hero-photo {
+aspect-ratio: 4 / 3;
+}
+.hero-overlay {
+background: linear-gradient(
+180deg,
+rgba(48, 35, 41, 0.35) 0%,
+rgba(48, 35, 46, 0.88) 100%
+);
+align-items: flex-end;
+}
+.hero-content {
+max-width: 100%;
+}
+h1 { font-size: 1.9rem; }
+h2 { font-size: 1.5rem; }
+}
+
+@media (min-width: 560px) {
+.grid-4 {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (min-width: 900px) {
+.grid-4 {
+grid-template-columns: repeat(4, 1fr);
+}
+}
+
+
+
+
+
+
 *
