@@ -1,81 +1,102 @@
-# SA_Sigasa_10515348_Pinky_Promise_wed5020_poe
+# Pinky Promise Website
 
-## Project title: Pinky Promise
+## 1. Project Overview
 
-**Pinky Promise**
-Pinky Promise is a small, creative nail business that specializes in custom made press on nails.
-This business is built around creativity, self-expression and proving customers with stylish nail desgins
-that suit their individual personalities and preferences.
+Pinky Promise is a family-run custom press-on nail business
+created by a mother and her four daughters.
 
-The purpose of this website is to create a professional and user-friendly online platform where customers can learn 
-about Pinky Promise and explore different designs and submit enquires for customer orders. 
+The website allows visitors to learn about the business,
+browse nail designs, explore services and make enquiries.
 
-The website will also make it easier for customers to communicate their requirements, including their preferred nail designs,
-colours, size and occasion. By creating an online presence, Pinky Promise can showcase its creativity, attract potential customers 
-and provide an accessible way for customers to enquire about and order press on nails.
+## 2. Website Pages
 
----
+- index.html - Home page
+- about_us.html - About the business
+- services.html - Services and frequently asked questions
+- products.html - Nail designs and live product search
+- enquiry.html - Custom nail enquiry form
+- contact.html - General contact form
 
-## Student Information
+## 3. Technologies Used
 
-|---|---|
-| Student Number | st10515348 |
-| Student full name | Siphesihle Aphelele Sigasa |
-|Module Name | Web Development(Introduction) |
-| Module Code | WEDE5020 |
-| Group | Year 01 Group 04 |
-| Lecturer | Deogratias Phiri | 
+- HTML5 for website structure
+- CSS3 for styling and responsive layouts
+- JavaScript for interactive features and validation
+- Git and GitHub for version control
+- Netlify or GitHub Pages for website deployment
 
----
+## 4. JavaScript Enhancements
 
-## Project Overview
+The website includes:
 
-This is a small family owned business, it was created by a single mother who has four daughters they each use their different art techniques and style to create their own set of custom nail designs
+- Automatic copyright year
+- Interactive FAQ accordion
+- Live product search
+- No-results search message
+- Contextual enquiry hints
+- Client-side form validation
+- Form error messages
+- Image lightbox
+- Scroll reveal animations
 
-## Website Goals and Overview
-Their vision is to grow Pinky Promise into a recognised and inspiring beauty brand that celebrates individuality, creativity and the strength of women. They aspire to build a lasting family legacy and inspire future generations to confidently express themselves through art and beauty    
+## 5. Search Engine Optimisation
 
-## Specific Goals
-To grow Pinky Promise into a recognizable brand  
+SEO improvements include:
 
-## Key Features and Functionality
+- Page-specific title tags
+- Meta descriptions
+- Relevant keywords
+- Semantic heading structure
+- Descriptive image alt text
+- Internal links between pages
+- robots.txt
+- sitemap.xml
+- Responsive design
 
-|---|---|
-| Responsive Navigation | (description) | 
-|Home Page | (description) | 
-|About Us Page | (description) |
-| Enquiry/Contact Form | (description) |
+## 6. Folder Structure
 
---
+Pinky_Promise/
+    index.html
+    about_us.html
+    services.html
+    products.html
+    enquiry.html
+    contact.html
+    css/
+        style.css
+    js/
+        script.js
+    images/
+    robots.txt
+    sitemap.xml
+    README.md
+    CHANGELOG.md
+    REFERENCES.md
 
-## Timeline and Milestones
+## 7. Running the Website
 
-| Milestones | Target Date | Status |
-|---|---|---|
-| Planning & Wireframing  | 05/08/2026 | Complete |
-| Part 1: Submit Proposal and Semantic HTLM structure | 14/08/2026 | Complete |
-| Add external CSS styling and moblie reposiveness |
-| Part 2: Submit CSS and Responsiveness to website | 18/09/2026 | Complete |
-| Part 3: Adding JavaScript and interactivity | [Date] | Planned |
-| Final Testing & Submission | [Date] | Planned |
+1. Open the Pinky_Promise folder in Visual Studio Code.
+2. Install the Live Server extension if necessary.
+3. Right-click index.html.
+4. Select Open with Live Server.
+5. Test all pages and interactive features.
 
----
+## 8. Form Limitations
 
-## Part 1 Details
+The enquiry and contact forms perform client-side validation.
+They do not currently send or store submitted information.
 
-*(Part 2 and Part 3 will follow in future submissions/edits)*
+A backend or form-processing service is required to receive
+real customer enquiries.
 
-*Describe exactly what was built/achieved for this specific submission. Be precise - markers use this to grade this part
+## 9. Before Submission
 
--Pages completed: index.html, about_us.html, enquiry.html, products.html
--Structure/semantics used: [e.g. sematic HTML5 tags - header, nav, main, footer]
--Styling approach : [e.g. basic CSS in style.css, no responsivenss yet]
--Known limitations for this part: [e.g. JavaScript functionality not yet implemented, will be added in Part 2/3]
-
----
-
-## Sitemap
-
-*Show the structure /hierarchy of your website's pages. You can use a simple diagram, indented list, or an image 
-placed in your " images" folder.*
-
+- Test all six pages.
+- Check the navigation links.
+- Confirm that all image paths work.
+- Test product search and the FAQ accordion.
+- Test forms using both valid and invalid information.
+- Update the changelog and references.
+- Commit and push changes to GitHub.
+- Deploy the website to a free hosting platform.
+- Replace placeholder URLs in the sitemap and robots.txt.
