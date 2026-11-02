@@ -1,47 +1,201 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Enquiry</title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <header>
-            <!-- header represents top selection of the website,it contains the logo and navigation links mostly -->
-             <div>
-                <!-- div is the divider used to seperate sections of the html content -->
-                 <h1>Logo.</h1>
-             </div>
-             <nav>
-<!-- nav contains the navigation links for your website -->
-        <ul>
-    <!-- ul refers to unordered list, this usually represents in bullet points -->
-     <li>
-        <!-- li refers to list items which is a single item in our list -->
-         <a href="index.html">Home</a>
-         <!-- a refers to anchor tag this represents a link to your website,links can be used to navigate 
-          around your website moving from one webpage to another , you can also use it to naviagte to external webpages  -->
+    <title>Enquiry | Custom Press-On Nails | Pinky Promise</title>
 
-     </li>
-      <li>
-         <a href="about_us.html">About Us</a>
-     </li>
-     <li>
-         <a href="enquiry.html">Enquiry</a>
-     </li>
-     <li>
-         <a href="products.html">Products</a>
-     </li>
-     <li>
-         <a href="services.html">Services</a>
-     </li>
-     <li>
-         <a href="contact.html">Contact</a>
-     </li>
-        </ul>
+    <meta name="description"
+          content="Send Pinky Promise an enquiry about custom press-on nail sets, preferred designs, sizing and availability.">
 
-             </nav>
-                
-             
-        </header>
-    </body>
+    <meta name="keywords"
+          content="custom press-on nails, nail design enquiry, Pinky Promise">
+
+    <meta name="author" content="Pinky Promise">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+
+        <a class="brand" href="index.html">
+            Pinky <span>Promise</span>
+            <small>PRESS-ON NAILS</small>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="page-hero">
+        <div class="container">
+            <p class="eyebrow">Let's talk nails</p>
+            <h1>Make an Enquiry</h1>
+            <p>
+                Tell us about the nail set you would love.
+                Fields marked * are required.
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container form-layout">
+
+            <div>
+                <h2>Your Dream Set Starts Here</h2>
+
+                <p>
+                    Share the design you are interested in and any
+                    details that will help us understand what you need.
+                </p>
+
+                <p class="small-note">
+                    This website form is a front-end demonstration.
+                    It does not send or store messages yet.
+                </p>
+            </div>
+
+            <form
+                class="site-form"
+                id="enquiry-form"
+                data-form-type="enquiry"
+                novalidate>
+
+                <div class="form-row">
+                    <label for="enquiry-name">Full Name *</label>
+
+                    <input
+                        id="enquiry-name"
+                        name="name"
+                        type="text"
+                        autocomplete="name"
+                        required
+                        minlength="2">
+
+                    <small class="field-error" aria-live="polite"></small>
+                </div>
+
+                <div class="form-row">
+                    <label for="enquiry-email">Email Address *</label>
+
+                    <input
+                        id="enquiry-email"
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        required>
+
+                    <small class="field-error" aria-live="polite"></small>
+                </div>
+
+                <div class="form-row">
+                    <label for="enquiry-phone">Phone Number (Optional)</label>
+
+                    <input
+                        id="enquiry-phone"
+                        name="phone"
+                        type="tel"
+                        autocomplete="tel"
+                        pattern="[0-9+()\s-]{7,20}">
+
+                    <small class="field-error" aria-live="polite"></small>
+                </div>
+
+                <div class="form-row">
+                    <label for="design">What Are You Enquiring About? *</label>
+
+                    <select id="design" name="design" required>
+                        <option value="">Choose an option</option>
+                        <option>French Tips</option>
+                        <option>Floral Set</option>
+                        <option>Maximalist Nails</option>
+                        <option>Dramatic Set</option>
+                        <option>Custom design</option>
+                        <option>Pricing and availability</option>
+                        <option>Other</option>
+                    </select>
+
+                    <small
+                        id="type-hint"
+                        class="type-hint"
+                        aria-live="polite"></small>
+
+                    <small class="field-error" aria-live="polite"></small>
+                </div>
+
+                <div class="form-row">
+                    <label for="enquiry-message">Tell Us More *</label>
+
+                    <textarea
+                        id="enquiry-message"
+                        name="message"
+                        rows="5"
+                        required
+                        minlength="10"
+                        maxlength="1000"
+                        placeholder="Colours, inspiration, preferred shape or any questions..."></textarea>
+
+                    <small class="field-error" aria-live="polite"></small>
+                </div>
+
+                <p
+                    class="form-success is-hidden"
+                    role="status">
+                    Your details passed the form checks. This demo does
+                    not send the enquiry to Pinky Promise yet.
+                </p>
+
+                <button class="btn btn-primary" type="submit">
+                    Check Enquiry
+                </button>
+
+                <p class="form-note">
+                    Please do not include sensitive personal information.
+                </p>
+
+            </form>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+
+        <p>Handmade with love by Pinky Promise 💗</p>
+
+        <p class="copyright">
+            &copy; <span id="year">2026</span>
+            Pinky Promise. All rights reserved.
+        </p>
+
+        <p>
+            <a href="products.html">Shop Nail Sets</a> ·
+            <a href="contact.html">Contact Us</a>
+        </p>
+
+    </div>
+</footer>
+
+</body>
 </html>
