@@ -2,70 +2,240 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> Pinky Promise | Home</title>
+    <title>Services | Pinky Promise</title>
+
+    <meta name="description"
+          content="Explore Pinky Promise press-on nail services, custom design enquiries and help choosing a nail set.">
+
+    <meta name="keywords"
+          content="press-on nails, custom nail designs, nail art, Pinky Promise">
+
+    <meta name="author" content="Pinky Promise">
+    <meta name="robots" content="index, follow">
 
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
- <body>
-    <header class="site-header">
-        <a class="logo" href="index.html">
-            <img src="https://canva.link/x95ky3u339ig1zv" alt="Pinky Promise logo">
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+
+        <a class="brand" href="index.html">
+            Pinky <span>Promise</span>
+            <small>PRESS-ON NAILS</small>
         </a>
 
-        <nav class="nav">
+        <nav class="main-nav" aria-label="Main navigation">
             <ul>
-                <a href="index.html">Home</a>
-
-                <li>
-                    <a href="about_us.html">About Us</a>
-                </li>
-                <li>
-                    <a href="enquiry.html">Enquiry</a>
-                </li>
-                <li>
-                    <a href="products.html">Products</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-
         </nav>
-        
-    </header>
 
-    <main>
+    </div>
+</header>
 
-        <section class="hero">
+<main>
 
-            <div class="hero-content">
+    <section class="page-hero">
+        <div class="container">
+            <p class="eyebrow">How we can help</p>
+            <h1>Our Services</h1>
+            <p>
+                Find a design, ask about a custom look, and let us know
+                what you have in mind.
+            </p>
+        </div>
+    </section>
 
-                <p class="eyebrow">
-                    Five women.Five stories.One promise
-                </p>
+    <section class="section">
+        <div class="container value-grid">
 
-                <h1>
-                    A promise worth remebering
-                </h1>
-
+            <article class="value-card">
+                <h2>Press-On Nail Sets</h2>
                 <p>
-                    At Pinky Promise, we turn meanigful ideas into memorable experiences,
-                    thoughtful gifts and beautifully planned moments
+                    Browse our nail designs and enquire about the set
+                    that catches your eye.
                 </p>
+                <a class="text-link" href="products.html">
+                    Browse Products &rarr;
+                </a>
+            </article>
 
-                <div class="button-row">
+            <article class="value-card">
+                <h2>Custom Design Enquiries</h2>
+                <p>
+                    Share your preferred colours, inspiration and
+                    the style you would like us to discuss with you.
+                </p>
+                <a class="text-link" href="enquiry.html">
+                    Request a Custom Set &rarr;
+                </a>
+            </article>
 
-                    <a class="btn btn-primary"
-                     href="products.html">
-                    Explore our products
-                    </a>
-                </div>
+            <article class="value-card">
+                <h2>Customer Support</h2>
+                <p>
+                    Ask questions about designs or send a general
+                    message to our team.
+                </p>
+                <a class="text-link" href="contact.html">
+                    Contact Us &rarr;
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="section section-soft">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">Quick answers</p>
+                <h2>Frequently Asked Questions</h2>
+                <p>Click a question to show or hide its answer.</p>
             </div>
-        </section>
-    </main>
- </body>
+
+            <div class="faq-list">
+
+                <div class="faq-item">
+                    <button
+                        class="faq-question"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="faq-design">
+                        Can I ask for a custom design?
+                    </button>
+
+                    <div
+                        class="faq-answer is-hidden"
+                        id="faq-design">
+                        <p>
+                            Yes. Use the enquiry form to describe your
+                            inspiration, preferred colours, shape and
+                            length so the team can discuss your idea.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button
+                        class="faq-question"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="faq-prices">
+                        Where can I find prices?
+                    </button>
+
+                    <div
+                        class="faq-answer is-hidden"
+                        id="faq-prices">
+                        <p>
+                            Prices and availability should be confirmed
+                            with Pinky Promise. Choose a design on the
+                            Products page and send an enquiry.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button
+                        class="faq-question"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="faq-contact">
+                        How do I contact Pinky Promise?
+                    </button>
+
+                    <div
+                        class="faq-answer is-hidden"
+                        id="faq-contact">
+                        <p>
+                            Use the Contact page for a general message
+                            or the Enquiry page to ask about a nail set.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<!-- Follow Us Section -->
+<section class="follow-us">
+    <div class="container">
+        <h2>Follow Us</h2>
+
+        <p>
+            Stay connected with Pinky Promise for the latest nail designs
+            and inspiration!
+        </p>
+
+        <div class="social-links">
+
+            <a href="https://www.instagram.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Follow Pinky Promise on Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Follow Pinky Promise on TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a href="https://www.facebook.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Follow Pinky Promise on Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+
+        <p>Handmade with love by Pinky Promise</p>
+
+        <p class="copyright">
+            &copy; <span id="year">2026</span>
+            Pinky Promise. All rights reserved.
+        </p>
+
+        <p>
+            <a href="products.html">Shop Nail Sets</a>
+            &middot;
+            <a href="contact.html">Contact Us</a>
+        </p>
+
+    </div>
+</footer>
+
+</body>
+</html>
+
+    </div>
+
+</footer>
+
+</body>
 </html>
