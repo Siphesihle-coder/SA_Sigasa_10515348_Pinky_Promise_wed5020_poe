@@ -1,130 +1,383 @@
+```html
 <!DOCTYPE html>
-<html lanag="en">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <head>
+    <title>Our Products | Pinky Promise</title>
 
-        <meta charset="UTF-8">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore custom press-on nails from Pinky Promise. Discover French tips, floral designs, dramatic nails and personalised nail sets.">
 
-        <title>Pinky Promise | Products</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
 
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+<body>
 
-    <body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-content">
 
-        <header class="site-header">
-            
-            <a class="logo"
-            href="index.html"
-            aria-label="Pinky Promise Home">
+            <a href="index.html" class="logo">
+                Pinky Promise
+            </a>
 
-            <img src="https://canva.link/x95ky3u339ig1zv" alt="Pinky Promise logo">
-        </a>
+            <!-- Main Navigation -->
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="products.html" aria-current="page">Products</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-        <nav class="nav" aria-label="Main navigation">
-               <ul>
-                <a href="index.html">Home</a>
+        </div>
+    </header>
 
-                <li>
-                    <a href="about_us.html">About Us</a>
-                </li>
-                <li>
-                    <a href="enquiry.html">Enquiry</a>
-                </li>
-                <li>
-                    <a href="products.html">Products</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
 
-        </nav>
-         
-        </header>
+    <main>
 
-        <main>
-
-            <section class="products-intro">
-
-                <h1>Our Nails Collection</h1>
+        <!-- Page Introduction -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Our Nail Collection</h1>
 
                 <p>
-                    Find the perfect set of nails to match your style which will match you to your artist.
-                    At Pinky Promise we offer one of a kind, high quality and affordable nail sets.
+                    Find your perfect set with Pinky Promise! From simple and
+                    elegant designs to bold and creative nail art, we create
+                    custom press-on nails to match your personal style.
                 </p>
 
-            </section>
+                <a href="enquiry.html" class="btn">
+                    Request Your Custom Set
+                </a>
+            </div>
+        </section>
 
-            <section class="product list">
 
-                <div class="product card">
-                    <img src="https://images.pexels.com/photos/34997562/pexels-photo-34997562.jpeg" alt="French Tips">
+        <!-- Product Search -->
+        <section class="product-search section-padding">
+            <div class="container">
 
-                    <h2>French Tips</h2>
+                <h2>Find Your Perfect Set</h2>
 
-                    <p>
-                     You can never go wrong with a classic Frech tip nail set its timeless but you can still
-                     add your own craetive spin on it.
-                     Its a blank canvas you can do whatever what you want on it.
-                    </p>
-                    
-                    <h3>R200-R350</h3>
+                <p>
+                    Search our collection to discover a nail style you love.
+                </p>
 
-                    <button>Order Now</button>
+                <label for="productSearch">Search nail designs:</label>
+
+                <input
+                    type="search"
+                    id="productSearch"
+                    placeholder="Try French tips, floral or dramatic..."
+                    aria-label="Search nail designs"
+                >
+
+            </div>
+        </section>
+
+
+        <!-- Product Collection -->
+        <section class="products-section section-padding">
+            <div class="container">
+
+                <h2>Explore Our Designs</h2>
+
+                <p class="section-intro">
+                    Every set is designed to help you express yourself.
+                    Browse some of our favourite nail styles below.
+                </p>
+
+                <div class="product-grid">
+
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <img
+                            src="images/French-Tips.avif"
+                            alt="Elegant French tip press-on nail design"
+                            loading="lazy"
+                        >
+
+                        <div class="product-info">
+                            <h3>French Tips</h3>
+
+                            <p>
+                                A timeless and elegant design suitable for
+                                everyday wear, special occasions and a
+                                classic, polished look.
+                            </p>
+
+                            <a href="enquiry.html" class="btn">
+                                Enquire About This Design
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <img
+                            src="images/Floral-Nails.avif"
+                            alt="Floral press-on nails with decorative flower designs"
+                            loading="lazy"
+                        >
+
+                        <div class="product-info">
+                            <h3>Floral Designs</h3>
+
+                            <p>
+                                Beautiful flower-inspired nail art for
+                                anyone who loves soft, feminine and
+                                creative designs.
+                            </p>
+
+                            <a href="enquiry.html" class="btn">
+                                Enquire About This Design
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <img
+                            src="images/Dramatic-Set.avif"
+                            alt="Bold and dramatic press-on nail design"
+                            loading="lazy"
+                        >
+
+                        <div class="product-info">
+                            <h3>Dramatic Sets</h3>
+
+                            <p>
+                                Make a statement with eye-catching nail
+                                designs for parties, celebrations and
+                                special occasions.
+                            </p>
+
+                            <a href="enquiry.html" class="btn">
+                                Enquire About This Design
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <!-- Product 4 -->
+                    <article class="product-card">
+                        <img
+                            src="images/Maximilst-Nails.avif"
+                            alt="Creative maximalist press-on nail art"
+                            loading="lazy"
+                        >
+
+                        <div class="product-info">
+                            <h3>Creative Nail Art</h3>
+
+                            <p>
+                                Explore expressive designs with bold
+                                details, unique patterns and artistic
+                                touches.
+                            </p>
+
+                            <a href="enquiry.html" class="btn">
+                                Enquire About This Design
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <!-- Product 5 -->
+                    <article class="product-card">
+                        <img
+                            src="images/multiple nails.jpg"
+                            alt="A selection of different press-on nail designs"
+                            loading="lazy"
+                        >
+
+                        <div class="product-info">
+                            <h3>Everyday Glam</h3>
+
+                            <p>
+                                Discover stylish nail sets that add a
+                                little extra glamour to your everyday
+                                look.
+                            </p>
+
+                            <a href="enquiry.html" class="btn">
+                                Enquire About This Design
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <!-- Product 6 -->
+                    <article class="product-card">
+                        <img
+                            src="images/collage of nails.jpg"
+                            alt="Collage showcasing a variety of custom press-on nails"
+                            loading="lazy"
+                        >
+
+                        <div class="product-info">
+                            <h3>Custom Press-On Nails</h3>
+
+                            <p>
+                                Have a design in mind? Tell us your
+                                preferred colours, shape and style so
+                                we can discuss a set that suits you.
+                            </p>
+
+                            <a href="enquiry.html" class="btn">
+                                Create Your Custom Set
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Customisation Section -->
+        <section class="customisation-section section-padding">
+            <div class="container">
+
+                <h2>Make Your Nails Your Own</h2>
+
+                <p>
+                    At Pinky Promise, we celebrate individuality.
+                    You can enquire about custom designs and discuss
+                    the details of your preferred nail set with us.
+                </p>
+
+                <div class="feature-grid">
+
+                    <article class="feature-card">
+                        <h3>Your Preferred Colours</h3>
+
+                        <p>
+                            Tell us which colours you love and the look
+                            you want your nails to achieve.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Your Favourite Shape</h3>
+
+                        <p>
+                            Let us know your preferred nail shape and
+                            the style you have in mind.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <h3>Your Unique Style</h3>
+
+                        <p>
+                            Share your inspiration, patterns or design
+                            ideas when submitting your enquiry.
+                        </p>
+                    </article>
+
                 </div>
 
-                <div class="product-card">
+                <a href="enquiry.html" class="btn">
+                    Submit an Enquiry
+                </a>
 
-                    <img src="https://images.pexels.com/photos/17471377/pexels-photo-17471377.jpeg" alt="Floral Design">
+            </div>
+        </section>
 
-                    <h2>Floral Nails</h2>
 
-                    <p>
-                        A simple flower designs always looks classy and elegant.
-                        This design is more of a softer dainty look while still allowing you to add your own personal
-                        touches to it.
-                    </p>
+        <!-- Ordering Information -->
+        <section class="ordering-section section-padding">
+            <div class="container">
 
-                    <h3>R350-R450</h3>
+                <h2>How to Order</h2>
 
-                    <button>Order Now</button>
+                <div class="steps-grid">
+
+                    <article class="step-card">
+                        <h3>Step 1: Choose Your Design</h3>
+
+                        <p>
+                            Browse our collection and choose a design
+                            that catches your eye.
+                        </p>
+                    </article>
+
+                    <article class="step-card">
+                        <h3>Step 2: Send an Enquiry</h3>
+
+                        <p>
+                            Visit our enquiry page and provide details
+                            about the nail set you are interested in.
+                        </p>
+                    </article>
+
+                    <article class="step-card">
+                        <h3>Step 3: Discuss Your Set</h3>
+
+                        <p>
+                            We can discuss your design preferences,
+                            sizing, pricing and other order details
+                            before you proceed.
+                        </p>
+                    </article>
+
                 </div>
 
-                <div class="product-card">
+                <a href="enquiry.html" class="btn">
+                    Start Your Enquiry
+                </a>
 
-                    <img src="https://images.pexels.com/photos/34121866/pexels-photo-34121866.jpeg" alt="Maximalist Nails">
+            </div>
+        </section>
 
-                    <h2>Maximalist Nails</h2>
 
-                    <p>
-                        This style allows the customer to do whatever they 
-                         without any limitaions of the lenght,design or number or charms.
-                         
-                    </p>
+        <!-- Closing Call to Action -->
+        <section class="cta-section section-padding">
+            <div class="container">
 
-                    <h3>R500-R650</h3>
-                    
-                    <button>Order Now</button>
-                </div>
+                <h2>Ready to Find Your Perfect Set?</h2>
 
-                <div class="product-card">
+                <p>
+                    Let Pinky Promise help you bring your nail inspiration
+                    to life, one beautiful set at a time.
+                </p>
 
-                    <img src="https://images.pexels.com/photos/32875639/pexels-photo-32875639.jpeg" alt="Dramatic Set">
+                <a href="contact.html" class="btn">
+                    Contact Us
+                </a>
 
-                    <h2>Dramatic Set</h2>
+            </div>
+        </section>
 
-                    <p>
-                        With this set ist all about the drama.
-                        It allows customers to have more fun with their desgins by going over the top
-                    </p>
+    </main>
 
-                     <h3>700-850</h3>
 
-                     <button>Order Now</button>
-                </div>
-            </section>
-        </main>
-    </body>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <p>
+                &copy; <span id="currentYear"></span> Pinky Promise.
+                All rights reserved.
+            </p>
+
+            <p>
+                Beautiful nails, made with love.
+            </p>
+
+        </div>
+    </footer>
+
+</body>
 </html>
+```
